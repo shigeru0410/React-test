@@ -10,7 +10,19 @@ class Blog extends React.Component {
     return (
       <>
         <Article 
-          title = {"止まるんじゃねぇぞ"} 
+          title = {"止まるんじゃねぇぞ"}
+          order = {3}
+          isPublished = {true}
+          author = {authorName}
+          />
+        <Article 
+          title = {"その先に"}
+          order = {3}
+          isPublished = {true}
+          author = {authorName}
+          />
+        <Article 
+          title = {"俺はいるぞ"}
           order = {3}
           isPublished = {true}
           author = {authorName}
