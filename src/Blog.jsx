@@ -4,28 +4,16 @@ import Article from "./Article";
 class Blog extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isPublished: false
+    }
   }
   render() {
     const authorName = "おいおい"
     return (
       <>
         <Article 
-          title = {"止まるんじゃねぇぞ"}
-          order = {3}
-          isPublished = {true}
-          author = {authorName}
-          />
-        <Article 
-          title = {"その先に"}
-          order = {3}
-          isPublished = {true}
-          author = {authorName}
-          />
-        <Article 
-          title = {"俺はいるぞ"}
-          order = {3}
-          isPublished = {true}
-          author = {authorName}
+          title = {"止まるんじゃねぇぞ"} isPublished = {this.state.isPublished}
           />
       </>
     )
