@@ -6,7 +6,7 @@ class Blog extends React.Component {
     super(props);
     this.state = {
       isPublished: false,
-      order: 1
+      count: 0
     }
   }
 
@@ -21,8 +21,11 @@ class Blog extends React.Component {
     return (
       <>
         <Article 
-          title = {"止まるんじゃねぇぞ"} isPublished = {this.state.isPublished} toggle = {() => this.togglePublished()}
-          />
+          title = {"止まるんじゃねぇぞ"} 
+          isPublished = {this.state.isPublished} 
+          toggle = {() => this.togglePublished()}
+          count = {this.state.count}
+        />
       </>
     )
   }
