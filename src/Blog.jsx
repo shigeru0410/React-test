@@ -20,6 +20,9 @@ class Blog extends React.Component {
     }
   }
 
+  componentDidCatch() {
+    document.getElementById( 'counter').removeEventListener('click', this.countUp)
+  }
 
   togglePublished = () => {
     this.setState( {
