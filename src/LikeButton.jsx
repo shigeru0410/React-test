@@ -15,11 +15,11 @@ const LikeButton = (props) => {
     return () => {
       document.getElementById('counter').addEventListener('click', countUp)
     }
-  })
+  });
 
   return(
     <button id = {"counter"}>いいね数: {count}</button>
   )
-}
+};
 
 export default LikeButton
