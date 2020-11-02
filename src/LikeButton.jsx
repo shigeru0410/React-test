@@ -9,6 +9,9 @@ const LikeButton = (props) => {
 
   useEffect(() => {
     document.getElementById( 'counter').addEventListener('click', countUp)
+    return () => {
+      document.getElementById('counter').addEventListener('click', countUp)
+    }
   })
 
   return(
