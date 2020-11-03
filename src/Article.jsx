@@ -15,21 +15,3 @@ const Article = (props) => {
 };
 
 export default Article;
-
-
-
-
-
-
-
-
-function createGreeting(name, greeting) {
-  console.log(name);
-  return greeting + "" + name;
-}
-
-
-const createGreeting = (name, greeting) => {
-  console.log(name);
-  return greeting + "" + name;
-}
