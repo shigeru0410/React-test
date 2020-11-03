@@ -23,9 +23,13 @@ export default Article;
 
 
 
-function createGreeting(name) {
-  return "Hello" + name;
+function createGreeting(name, greeting) {
+  console.log(name);
+  return greeting + "" + name;
 }
 
 
-const createGreeting = name => "Hello" + name;
+const createGreeting = (name, greeting) => {
+  console.log(name);
+  return greeting + "" + name;
+}
