@@ -21,7 +21,7 @@ const LikeButton = (props) => {
   return(
     <>
       <button id = {"counter"}>いいね数: {count}</button>
-      <button onClick = {() => release(limit)}>だからよ</button>
+      <button onClick = {() => release(!limit)}>だからよ</button>
     </>
   )
 };
